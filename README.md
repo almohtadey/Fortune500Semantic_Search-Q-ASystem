@@ -1,26 +1,42 @@
 # Fortune 500 NLP-Powered QA System
 
-This is a question-answering system that uses semantic similarity (via SentenceTransformers) to retrieve answers from a structured dataset of Fortune 500 companies.
+An interactive question-answering system built using [SentenceTransformers](https://www.sbert.net/) and semantic similarity to allow users to query structured data from the Fortune 500 Companies dataset.
 
-Developed by: Almohtadey Metwaly
-
----
-
-## Overview
-
-The project processes a dataset of Fortune 500 companies and creates a knowledge base of human-readable sentences. It then allows users to ask natural language questions and returns the top semantically similar answers.
+Developed by **Almohtadey Metwaly**.
 
 ---
 
-## Features
+##  Overview
 
-- Semantic similarity search using Sentence-BERT (all-MiniLM-L6-v2)
-- Text preprocessing and numeric normalization
-- Handles missing values with default placeholders
-- Interactive CLI interface
-- Model evaluation with precision, recall, F1-score, and accuracy
+This project loads a dataset of Fortune 500 companies and uses sentence embeddings to semantically answer natural language questions like:
+
+- "What is the revenue of Walmart?"
+- "Where is the headquarters of ExxonMobil?"
+- "Which company was a newcomer?"
+- "What industry does Apple belong to?"
+
+The system builds a knowledge base of human-readable sentences and matches user questions via cosine similarity.
 
 ---
+
+##  Features
+
+- Semantic search over structured data using **Sentence-BERT (all-MiniLM-L6-v2)**
+- Interactive command-line interface (CLI)
+- Model evaluation on a test set
+- Preprocessing and cleaning of numeric and textual fields
+- Handles missing data gracefully
+
+---
+
+## 🗂 Dataset
+
+- **File Used**: `Fortune 500 Companies.csv`
+- Columns used:
+  - `name`, `rank`, `year`, `industry`, `revenue_mil`, `profit_mil`, `headquarters_city`, `headquarters_state`, `newcomer_to_fortune_500`
+
+Make sure this file exists at the path specified in the code or change the `file_path` variable.
+
 
 ## Dataset
 
@@ -46,9 +62,6 @@ The project processes a dataset of Fortune 500 companies and creates a knowledge
    ```
 
 2. Place your CSV file at the path specified in the code or change it 
-   ```
-
-
 3. Run the script:
    ```
    python your_script_name.py
