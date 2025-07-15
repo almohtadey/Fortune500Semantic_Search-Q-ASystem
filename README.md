@@ -29,30 +29,13 @@ The system builds a knowledge base of human-readable sentences and matches user 
 
 ---
 
-## 🗂 Dataset
+##  Dataset
 
 - **File Used**: `Fortune 500 Companies.csv`
 - Columns used:
   - `name`, `rank`, `year`, `industry`, `revenue_mil`, `profit_mil`, `headquarters_city`, `headquarters_state`, `newcomer_to_fortune_500`
 
 Make sure this file exists at the path specified in the code or change the `file_path` variable.
-
-
-## Dataset
-
-- File: Fortune 500 Companies.csv
-- Key columns used: 
-  - name
-  - rank
-  - year
-  - industry
-  - revenue_mil
-  - profit_mil
-  - headquarters_city
-  - headquarters_state
-  - newcomer_to_fortune_500
-
----
 
 ## Setup and Installation
 
